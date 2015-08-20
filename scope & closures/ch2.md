@@ -31,7 +31,7 @@ function foo(a) {
 	bar(b * 3);
 }
 
-foo( 2 ); // 2, 4, 12
+foo( 2 ); // 2 4 12
 ```
 
 There are three nested scopes inherent in this code example. It may be helpful to think about these scopes as bubbles inside of each other.
@@ -109,7 +109,7 @@ When the `console.log(..)` call occurs, it finds both `a` and `b` in the scope o
 
 By default, if a string of code that `eval(..)` executes contains one or more declarations (either variables or functions), this action modifies the existing lexical scope in which the `eval(..)` resides. Technically, `eval(..)` can be invoked "indirectly", through various tricks (beyond our discussion here), which causes it to instead execute in the context of the global scope, thus modifying it. But in either case, `eval(..)` can at runtime modify an author-time lexical scope.
 
-**Note:** `eval(..)` when used in a strict-mode program operates in its own lexical scope, which means declarations made inside of the eval() do not actually modify the enclosing scope.
+**Note:** `eval(..)` when used in a strict-mode program operates in its own lexical scope, which means declarations made inside of the `eval()` do not actually modify the enclosing scope.
 
 ```js
 function foo(str) {
