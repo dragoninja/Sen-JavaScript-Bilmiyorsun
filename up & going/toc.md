@@ -1,4 +1,4 @@
-# Sen JavaScript Bilmiyorsun: Giriş ve İlerleme
+# Sen JavaScript Bilmiyorsun: Başla ve Devam Et
 
 ## İçindekiler
 
@@ -7,7 +7,7 @@
 * Bölüm 1: Programlamaya Giriş
 	* Kod
 	* Kendin Dene
-	* Operatörler *(Operators)*
+	* İşleçler *(Operators)*
 	* Değerler ve Tipler
 	* Kod Yorumları
 	* Değişkenler *(Variables)*
@@ -23,13 +23,13 @@
 	* Katı Mod *(Strict Mode*)
 	* Değer Olarak Fonksiyonlar
 	* `this` Anahtar Kelimesi
-	* Prototype'lar
+	* Prototipler
 	* Eski ve Yeni
 	* JavaScript Dışındakiler
 * Bölüm 3: SJSB'a Giriş
-	* Scope ve Closure'lar
-	* this ve Obje Prototype'ları
-	* Tipler ve Grammer
-	* Asenkron ve Performans
+	* Kapsam *(Scope)* ve Kaplamlar *(Clojures)*
+	* this ve Nesne Prototipleri
+	* Tipler ve Gramer
+	* Eşzamansız ve Başarım
 	* ES6 ve Ötesi
 * Ek A: Teşekkürler

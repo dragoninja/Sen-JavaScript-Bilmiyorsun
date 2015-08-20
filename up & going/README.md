@@ -1,4 +1,4 @@
-# Sen JavaScript Bilmiyorsun: Giriş ve İlerleme
+# Sen JavaScript Bilmiyorsun: Başla ve Devam Et
 
 <img src="cover.jpg" width="300">
 

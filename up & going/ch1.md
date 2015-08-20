@@ -1,9 +1,9 @@
-# You Don't Know JS: Up & Going
-# Chapter 1: Into Programming
+# Sen JavaScript Bilmiyorsun: Başla ve Devam Et
+# Bölüm 1: Programlamaya Giriş
 
-Welcome to the *You Don't Know JS* (*YDKJS*) series.
+*Sen JavaScript Bilmiyorsun* (*SJSB*) serisine hoşgeldiniz.
 
-*Up & Going* is an introduction to several basic concepts of programming -- of course we lean toward JavaScript (often abbreviated JS) specifically -- and how to approach and understand the rest of the titles in this series. Especially if you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get *up and going*.
+*Başla & Devam Et*, bu serideki diğer başlıklara nasıl yaklaşacağımız ve bunları anlayacağımız doğrultusunda programlamanın -tabii ki JavaScript'e özel olarak değineceğiz- temel konseptlerine bir giriştir. Eğer özellikle JavaScript'e ya da programlamaya yeni başlıyorsanız, bu kitap *başlamanız ve devam etmeniz* için gerekenleri kısaca gözden geçirecek.
 
 This book starts off explaining the basic principles of programming at a very high level. It's mostly intended if you are starting *YDKJS* with little to no prior programming experience, and are looking to these books to help get you started along a path to understanding programming through the lens of JavaScript.
 
