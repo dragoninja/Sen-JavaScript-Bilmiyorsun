@@ -1,6 +1,6 @@
-# Sen Var JavaScript Bilmemek (kitap serisi)
+# Sen JavaScript Bilmiyorsun (kitap serisi)
 
-JavaScript dilinin temel işleyişi derinlemesine inceleyen kitap serisi.
+Bu, JavaScript dilinin temel işleyişini derinlemesine inceleyen bir kitap serisi.
 
 <a href="up & going/README.md"><img src="up %26 going/cover.jpg" width="75"></a>&nbsp;
 <a href="scope & closures/README.md"><img src="scope %26 closures/cover.jpg" width="75"></a>&nbsp;
@@ -10,11 +10,11 @@ JavaScript dilinin temel işleyişi derinlemesine inceleyen kitap serisi.
 
 ## Başlıklar
 
-* ["Giriş ve İlerleme"](up & going/README.md#you-dont-know-js-up--going), *(orj: 'Up & Going')*
-* ["Scope ve Closure'lar"](scope & closures/README.md#you-dont-know-js-scope--closures), *(orj: 'Scope & Closures')*
-* ["this ve Obje Prototype'ları"](this & object prototypes/README.md#you-dont-know-js-this--object-prototypes), *(orj: 'this & Object Prototypes')*
+* ["Başla ve Devam Et"](up & going/README.md#you-dont-know-js-up--going), *(orj: 'Up & Going')*
+* ["Kapsam ve Kaplamlar"](scope & closures/README.md#you-dont-know-js-scope--closures), *(orj: 'Scope & Closures')*
+* ["this ve Nesne Prototipleri"](this & object prototypes/README.md#you-dont-know-js-this--object-prototypes), *(orj: 'this & Object Prototypes')*
 * ["Tipler ve Gramer"](types & grammar/README.md#you-dont-know-js-types--grammar), *(orj: 'Types & Grammar')*
-* ["Asenkron ve Performans"](async & performance/README.md#you-dont-know-js-async--performance), *(orj: 'Async & Performance')*
+* ["Eşzamansız ve Başarım"](async & performance/README.md#you-dont-know-js-async--performance), *(orj: 'Async & Performance')*
 * "ES6 ve Ötesi" (yazımı sürüyor), *(orj: 'ES6 & Beyond')* 
 
 ## Çeviri Önsözü
@@ -25,4 +25,4 @@ Bu çalışma Kyle Simpson tarafından yazılmış olan "You Don't Know JS" seri
 
 Tüm kitapların hakları saklıdır (c) 2013-2015 Kyle Simpson.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br />Bu çalışma <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>'ı ile korunmaktadır.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br />Bu çalışma <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported Lisansı</a> ile korunmaktadır.
