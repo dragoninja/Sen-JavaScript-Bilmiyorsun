@@ -5,98 +5,98 @@
 
 *Başla & Devam Et*, bu serideki diğer başlıklara nasıl yaklaşacağımız ve bunları anlayacağımız doğrultusunda programlamanın -tabii ki JavaScript'e özel olarak değineceğiz- temel konseptlerine bir giriştir. Eğer özellikle JavaScript'e ya da programlamaya yeni başlıyorsanız, bu kitap *başlamanız ve devam etmeniz* için gerekenleri kısaca gözden geçirecek.
 
-This book starts off explaining the basic principles of programming at a very high level. It's mostly intended if you are starting *YDKJS* with little to no prior programming experience, and are looking to these books to help get you started along a path to understanding programming through the lens of JavaScript.
+Bu kitap programlamanın temel prensiplerini üst düzeyde açıklayarak başlıyor. Çok az ya da hiç programlama deneyiminiz olmadığı için *YDKJS* ile JavaScript üzerinden programalamayı anlamak istiyor ve bu kitapları bu konuda size yardımcı olsun diye okuyorsanız düşüncesiyle bu şekilde düşünülmüştür.
 
-Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.
+1\. Bölüm, *programlaya giriş* için öğrenmek isteyeceğiniz şeylere hızlı bir genel bakıştır. Bu konulara daha detaylı bakabileceğiniz diğer bir çok iyi programlamaya giriş kaynağı bulunmaktadır ve bu bölüme ek olarak bunlardan yararlanmanız için sizi teşvik edeceğim.
 
-Once you feel comfortable with general programming basics, Chapter 2 will help guide you to a familiarity with JavaScript's flavor of programming. Chapter 2 introduces what JavaScript is about, but again, it's not a comprehensive guide -- that's what the rest of the *YDKJS* books are for!
+Programlamanın genel olarak temelleriyle ilgili kendinizi rahat hissettiğinizde 2. Bölüm JavaScript'in kendine özel programlama yaklaşımıyla sizi tanıştıracaktır. 2. Bölüm, JavaScript'in ne olduğuyla ilgili olarak giriş yapacak, ama tekrar ediyorum, bu detaylı bir rehber değil -- *YDKJS* kitaplarının geri kalanları tam da bunun için!
 
-If you're already fairly comfortable with JavaScript, first check out Chapter 3 as a brief glimpse of what to expect from *YDKJS*, then jump right in!
+JavaScript ile ilgili olarak zaten yeterince rahat iseniz, *YDKJS* hakkında beklentileriniz için 3. Bölüm'e kısa bir gözatın ve başlayın!
 
-## Code
+## Kod
 
-Let's start from the beginning.
+Baştan başlayalım.
 
-A program, often referred to as *source code* or just *code*, is a set of special instructions to tell the computer what tasks to perform. Usually code is saved in a text file, although with JavaScript you can also type code directly into a developer console in a browser, which we'll cover shortly.
+Bir program, genel olarak *kaynak kodu* ya da sadece *kod* olarak da adlandırılır, bilgisayara hangi görevleri yapmasını istediğimizi söylememize yarayan bir özel komutlar kümesidir. Genellikle bir metin dosyasına kaydedilir, bir süre sonra göreceğimiz gibi JavaScript için aynı zamanda geliştirici konsoluna doğrudan giriş de yapabilirsiniz.
 
-The rules for valid format and combinations of instructions is called a *computer language*, sometimes referred to as its *syntax*, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.
+Komutların geçerli biçim ve kombinasyonu hakkındaki kurallara *programlama dili* adı verilir, kelimeleri ve noktalama işaretlerini kullanarak nasıl kelimeleri yazacağımızı ve geçerli cümleler üreteceğimizi söyleyen İngilizce/Türkçe dilleri gibi bazen *sözdizimi* olarak da geçer.
 
-### Statements
+### İfadeler
 
-In a computer language, a group of words, numbers, and operators that performs a specific task is a *statement*. In JavaScript, a statement might look as follows:
-
-```js
-a = b * 2;
-```
-
-The characters `a` and `b` are called *variables* (see "Variables"), which are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the number `42`) to be used by the program. Think of them as symbolic placeholders for the values themselves.
-
-By contrast, the `2` is just a value itself, called a *literal value*, because it stands alone without being stored in a variable.
-
-The `=` and `*` characters are *operators* (see "Operators") -- they perform actions with the values and variables such as assignment and mathematic multiplication.
-
-Most statements in JavaScript conclude with a semicolon (`;`) at the end.
-
-The statement `a = b * 2;` tells the computer, roughly, to get the current value stored in the variable `b`, multiply that value by `2`, then store the result back into another variable we call `a`.
-
-Programs are just collections of many such statements, which together describe all the steps that it takes to perform your program's purpose.
-
-### Expressions
-
-Statements are made up of one or more *expressions*. An expression is any reference to a variable or value, or a set of variable(s) and value(s) combined with operators.
-
-For example:
+Bir programlama dlinde, belirli bir görevi gerçekleştirmeyi ifade eden kelime, sayı ve işleç grubuna *deyim* (*statement*) adı verilir. JavaScript'te bir deyim aşağıdaki gibi olabilir:
 
 ```js
 a = b * 2;
 ```
 
-This statement has four expressions in it:
+`a` ve `b` karakterlerine *değişken* (*variable*) (bkz. Değişkenler) ismi verilir, bunlar herhangi bir şeyi depolayabileceğiniz basit kutular gibidir. Programlarda değişkenler (`42` sayısı gibi) ileride program tarafından kullanılacak olan değerleri saklar. Bunları, değerlerin kendileri yerine geçen sembolik yertutucular olarak düşünebilirsiniz.
 
-* `2` is a *literal value expression*
-* `b` is a *variable expression*, which means to retrieve its current value
-* `b * 2` is an *arithmetic expression*, which means to do the multiplication
-* `a = b * 2` is an *assignment expression*, which means to assign the result of the `b * 2` expression to the variable `a` (more on assignments later)
+Aksine `2` sadece değerin kendisidir, *literal değer* olarak adlandırılır, çünkü tek başına bir değişken içerisinde tutulmadan bulunmaktadır.
 
-A general expression that stands alone is also called an *expression statement*, such as the following:
+`=` ve `*` karakterlerine *işleç* (*operator*) (bkz. İşleçler) adı verilir -- değerler ve değişkenler üzerinde atama ve matematik çarpım gibi işlemleri gerçekleştirirler.
+
+JavaScript'te çoğu ifade bir noktalı virgülle (`;`) sonlanır.
+
+`a = b * 2;` ifadesi bilgisayara, kabaca, `b` değişkeninde tutulan değeri alıp `2` ile çarpıp sonucu tekrar `a` değişkeninde saklamasını söyler.
+
+Programlar basitçe birçok ifadenin toplanmasıdır, bu ifadeler programın amacını gerçekleştirmek için gereken bütün adımları tanımlarlar.
+
+### Deyimler
+
+İfadeler bir ya da daha fazla *deyim*'den (*expression*) meydana gelmiştir. Bir deyim, herhangi bir değişkene veya değere ya da bunların işleçlerle bir bileşkesine referans demektir.
+
+Örneğin:
+
+```js
+a = b * 2;
+```
+
+Bu ifade dört deyim içermektedir:
+
+* `2` bir *literal değer deyimi*'dir
+* `b` bir *değişken deyimi*'dir, şu anki değerini getir anlamına gelir
+* `b * 2` bir *aritmetik deyim*'dir, çarpım işlemini yap demektir
+* `a = b * 2` bir *atama deyimi*'dir, `b * 2` işleminin sonucunu `a` değişkenine ata demektir (atamalar hakkında ayrıntı daha sonra)
+
+Tek başına bulunan genel bir deyime ayrıca *deyim ifadesi* ismi de verilir, örnek olarak:
 
 ```js
 b * 2;
 ```
 
-This flavor of expression statement is not very common or useful, as generally it wouldn't have any effect on the running of the program -- it would retrieve the value of `b` and multiply it by `2`, but then wouldn't do anything with that result.
+Bu tür bir deyim ifadesi yaygın da değildir çok kullanışlı da değildir, çünkü çalışan program üzerinde bir etkisi olmayacaktır -- `b`'nin değerini alacak ve `2` ile çarpacaktır, fakat daha sonra bu sonuçla hiçbir şey yapmayacaktır.
 
-A more common expression statement is a *call expression* statement (see "Functions"), as the entire statement is the function call expression itself:
+Daha yaygın bir deyim ifadesi ise *çağırma deyimi* ifadesidir (bkz. "Fonksiyonlar"), burada bütün ifade bir fonksiyon çağırma deyiminden ibarettir:
 
 ```js
 alert( a );
 ```
 
-### Executing a Program
+### Bir Programı Çalıştırmak
 
-How do those collections of programming statements tell the computer what to do? The program needs to be *executed*, also referred to as *running the program*.
+Bu programlama ifadeleri bilgisayara ne yapacağını nasıl söylüyor? Programın *çalıştırılması* (*execution*) gerekir, ayrıca *programı koşturmak* olarak da adlandırılır.
 
-Statements like `a = b * 2` are helpful for developers when reading and writing, but are not actually in a form the computer can directly understand. So a special utility on the computer (either an *interpreter* or a *compiler*) is used to translate the code you write into commands a computer can understand.
+`a = b * 2` gibi ifadeler okur ve yazarken geliştiriciler için kullanışlıdır, fakat bir bilgisayarın doğrudan anlayabileceği bir biçimde değildirler. Sonuç olarak bilgisayarda bulunan özel bir araç (ya bir *yorumcu* (*interpreter*) ya da bir *derleyici* (*compiler*)) kullanılarak yazdığınız kod bilgisayarın anlayabileceği komutlara çevrilir.
 
-For some computer languages, this translation of commands is typically done from top to bottom, line by line, every time the program is run, which is usually called *interpreting* the code.
+Bazı bilgisayar dilleri için bu komutların çevirisi genel olarak yukarıdan aşağıya, satır satır yapılır, program her çalıştırıldığında kodun *yorumlanması* olarak adlandırılır.
 
-For other languages, the translation is done ahead of time, called *compiling* the code, so when the program *runs* later, what's running is actually the already compiled computer instructions ready to go.
+Diğer diller için, çevrim önceden yapılır, kodun *derlenmesi* olarak adlandırılır, program daha sonra *çalıştığında* çalışan şey aslında hazır olan ve zaten derlenmiş olan bilgisayar komutlarıdır.
 
-It's typically asserted that JavaScript is *interpreted*, because your JavaScript source code is processed each time it's run. But that's not entirely accurate. The JavaScript engine actually *compiles* the program on the fly and then immediately runs the compiled code.
+Genel olarak JavaScript'in *yorumlandığı* söylenir, çünkü her çalıştırıldığında JavaScript kaynak kodunuz işlenir. Fakat bu tam olarak doğru değildir. JavaScript motoru programı o anda *derler* ve hemen derlenmiş olan kodu çalıştırır.
 
-**Note:** For more information on JavaScript compiling, see the first two chapters of the *Scope & Closures* title of this series.
+**Not:** JavaScript derleme üzerinde daha fazla bilgi için serideki *Kapsam & Kaplam* adlı kitabın ilk iki bölümüne gözatın.
 
-## Try It Yourself
+## Kendiniz Deneyin
 
-This chapter is going to introduce each programming concept with simple snippets of code, all written in JavaScript (obviously!).
+Bu bölüm her programlama konseptini basit kod parçacıklarıyla tanıtacak ve bütün kod JavaScript'te yazılacak (tabii ki!).
 
-It cannot be emphasized enough: while you go through this chapter -- and you may need to spend the time to go over it several times -- you should practice each of these concepts by typing the code yourself. The easiest way to do that is to open up the developer tools console in your nearest browser (Firefox, Chrome, IE, etc.).
+Daha fazla vurgulayamam: bu bölümü okurken her bir konsepti kendiniz kodlayarak iyi bir şekilde uygulamalısınız -- ve üzerinden tekrar tekrar geçmeniz gerekecek şekilde zaman ayırmalısınız. En yakın tarayıcınızda (Firefox, Chrome, IE, v.b.) geliştirici araçları konsolunu açarak yapmak bunun en kolayıdır.
 
-**Tip:** Typically, you can launch the developer console with a keyboard shortcut or from a menu item. For more detailed information about launching and using the console in your favorite browser, see "Mastering The Developer Tools Console" (http://blog.teamtreehouse.com/mastering-developer-tools-console). To type multiple lines into the console at once, use `<shift> + <enter>` to move to the next new line. Once you hit `<enter>` by itself, the console will run everything you've just typed.
+**İpucu:** Genellikle geliştirici konsolunu bir klavye kısayolu ya da menü öğesi aracılığıyla açabilirsiniz. Daha detaylı bilgi için "Geliştirici Konsolunda Uzmanlaşmak" başlığına gözatın (http://blog.teamtreehouse.com/mastering-developer-tools-console). Birden fazla satırı aynı anda girmek için `<shift> + <enter>` kısayolunu kullanarak sonraki satıra geçebilirsiniz. Sadece `<enter>` tuşuna bastığınızda girdiğiniz herşeyi çalıştıracaktır.
 
-Let's get familiar with the process of running code in the console. First, I suggest opening up an empty tab in your browser. I prefer to do this by typing `about:blank` into the address bar. Then, make sure your developer console is open, as we just mentioned.
+Konsolda kod çalıştırma konusuna biraz alışalım. Öncelikle, size tarayıcınızda boş bir sekme açmanızı öneriyorum. Bunu yapmak için adres çubuğuna `about:blank` yazmayı tercih ederim. Daha sonra, bahsettiğim gibi geliştirici konsolunu açtığınızdan emin olun.
 
-Now, type this code and see how it runs:
+Şimdi şu kodu girin ve nasıl çalıştığına bakın:
 
 ```js
 a = 21;
@@ -106,33 +106,33 @@ b = a * 2;
 console.log( b );
 ```
 
-Typing the preceding code into the console in Chrome should produce something like the following:
+Bu kodu Chrome'da konsola girdiğinizde aşağıdaki gibi bir çıktı olmasını bekleyebilirsiniz:
 
 <img src="fig1.png" width="500">
 
-Go on, try it. The best way to learn programming is to start coding!
+Devam, deneyin. Programlamayı öğrenmenin en iyi yolu kodlamaya başlamaktır!
 
-### Output
+### Çıktı
 
-In the previous code snippet, we used `console.log(..)`. Briefly, let's look at what that line of code is all about.
+Önceki kod parçasında `console.log(..)` kullanmıştık. Kısaca bu kod satırının ne yaptığına bakalım.
 
-You may have guessed, but that's exactly how we print text (aka *output* to the user) in the developer console. There are two characteristics of that statement that we should explain.
+Tahmin etmiş olabileceğiniz gibi bu, geliştirici konsolunda metin yazdırmanın (kullanıcıya *çıktı* vermenin) yoludur. Bu ifadenin açıklamamız gereken iki karakteristiği mevcuttur.
 
-First, the `log( b )` part is referred to as a function call (see "Functions"). What's happening is we're handing the `b` variable to that function, which asks it to take the value of `b` and print it to the console.
+Öncelikle, `log( b )` kısmına fonksiyon çağrısı adı verilir (bkz. "Fonksiyonlar"). Burada olan, `b` değişkenini fonksiyona vererek `b`'nin değerini alıp konsola yazmasını istememizdir.
 
-Second, the `console.` part is an object reference where the `log(..)` function is located. We cover objects and their properties in more detail in Chapter 2.
+İkinci olarak, `console.` kısmı ise içerisinde `log(..)` fonksiyonunun bulunduğu bir nesne referansıdır. 2. Bölümde nesneleri ve özelliklerini detaylıca inceleyeceğiz.
 
-Another way of creating output that you can see is to run an `alert(..)` statement. For example:
+Görebileceğiniz bir çıktı yapmanın bir başka yolu ise `alert(..)` ifadesini çalıştırmaktır. Örneğin:
 
 ```js
 alert( b );
 ```
 
-If you run that, you'll notice that instead of printing the output to the console, it shows a popup "OK" box with the contents of the `b` variable. However, using `console.log(..)` is generally going to make learning about coding and running your programs in the console easier than using `alert(..)`, because you can output many values at once without interrupting the browser interface.
+Eğer bunu çalıştırırsanız, konsola çıktıyı basmak yerine, `b` değişkeninin içeriğiyle beraber bir "OK" kutusu gösterdiğini göreceksiniz. Fakat genellikle `console.log(..)` kullanmak, kodlamayı öğrenmeyi ve programlarınızı konsolda çalıştırmayı `alert(..)` kullanmaktan çok daha kolaylaştıracaktır, çünkü tek seferde tarayıcı arayüzünü bölmeden birden fazla değeri çıktı olarak yazdırabilirsiniz.
 
-For this book, we'll use `console.log(..)` for output.
+Bu kitapta çıktı amacıyla `console.log(..)` kullanacağız.
 
-### Input
+### Girdi
 
 While we're discussing output, you may also wonder about *input* (i.e., receiving information from the user).
 
